@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d1410">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Gomas de CBD · Vitality Gummy Bears | Alpha Hemp Brasil</title>
+<meta name="description" content="Gomas de CBD (canabidiol) Vitality importadas do Reino Unido: 40 unidades de 5mg, dose exata, pronta entrega em Alphaville e São Paulo. O jeito simples de começar — com laudo COA e orientação.">
+<meta property="og:title" content="Vitality CBD Gummy Bears · Alpha Hemp Brasil">
+<meta property="og:description" content="Lote importado do Reino Unido em pronta entrega. Dose exata de 5mg por goma, laudo COA e orientação da equipe Alpha Hemp.">
+<meta property="og:type" content="website">
+
+<!-- ============================================
+     GA4 — TROQUE G-XXXXXXXXXX pelo seu ID real
+     (mesmo ID usado nas outras páginas Alpha Hemp)
+============================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0d1410;
+  --surface:#142019;
+  --surface-2:#182620;
+  --line:#26382d;
+  --text:#efe9dc;
+  --muted:#9fb3a6;
+  --green:#4a9a6e;
+  --green-deep:#2f6849;
+  --accent:#ef7350;
+  --grad-cta:linear-gradient(135deg,#e0523f 0%,#f08a3c 100%);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{overflow-y:auto;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  padding-bottom:96px; /* espaço pro CTA fixo — nada fica coberto */
+}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:650;line-height:1.15;letter-spacing:-.01em}
+p{max-width:56ch}
+
+/* ---------- Header ---------- */
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 20px;max-width:640px;margin:0 auto;
+}
+.logo{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--text);text-decoration:none}
+.logo em{color:var(--green);font-style:normal}
+.back{color:var(--muted);text-decoration:none;font-size:.85rem}
+
+/* ---------- Hero ---------- */
+.hero{padding:28px 0 8px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--green);border:1px solid var(--line);
+  padding:6px 12px;border-radius:100px;margin-bottom:18px;
+}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-size:clamp(1.9rem,7vw,2.6rem);margin-bottom:14px}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero .sub{color:var(--muted);font-size:1.02rem;margin-bottom:22px}
+
+.hero-benefits{list-style:none;margin-bottom:24px}
+.hero-benefits li{
+  display:flex;gap:10px;align-items:flex-start;
+  padding:7px 0;font-size:.95rem;
+}
+.hero-benefits .check{color:var(--green);font-weight:700;flex-shrink:0}
+
+/* ---------- Foto do produto ----------
+   TROCAR: substitua a div .product-photo por
+   <img src="SUA_FOTO.jpg" alt="Vitality CBD Gummy Bears" class="product-img">
+--------------------------------------- */
+.product-photo{
+  border:1px solid var(--line);border-radius:var(--radius);
+  background:radial-gradient(circle at 30% 20%, #1c2c22 0%, var(--surface) 60%);
+  aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;
+  color:var(--muted);font-size:.85rem;text-align:center;padding:20px;
+  margin-bottom:20px;
+}
+.product-img{width:100%;border-radius:var(--radius);border:1px solid var(--line);margin-bottom:20px;display:block;background:#fff;padding:18px}
+
+.price-block{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:20px;margin-bottom:16px;
+}
+.price-block .from{color:var(--muted);font-size:.85rem;text-decoration:line-through}
+.price-block .price{font-family:'Fraunces',serif;font-size:2.1rem;color:var(--text)}
+.price-block .per{color:var(--muted);font-size:.85rem}
+.price-block .pix{color:var(--green);font-size:.92rem;margin-top:6px}
+.price-block .pix strong{font-size:1.1rem}
+
+/* ---------- CTA buttons ---------- */
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;padding:17px 20px;border-radius:100px;
+  background:var(--grad-cta);color:#fff;text-decoration:none;
+  font-weight:700;font-size:1.02rem;border:none;
+  box-shadow:0 8px 24px rgba(224,82,63,.28);
+}
+.btn:active{transform:scale(.98)}
+.btn-ghost{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;padding:15px 20px;border-radius:100px;
+  background:transparent;color:var(--text);text-decoration:none;
+  font-weight:600;font-size:.95rem;border:1px solid var(--line);
+  margin-top:10px;
+}
+.micro{color:var(--muted);font-size:.78rem;text-align:center;margin-top:12px}
+
+/* ---------- Trust bar ---------- */
+.trust{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);
+  border-radius:var(--radius);overflow:hidden;margin:32px 0;
+}
+.trust div{background:var(--surface);padding:14px 16px}
+.trust .k{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.trust .v{font-weight:600;font-size:.92rem;margin-top:2px}
+
+/* ---------- Estoque (assinatura da página) ---------- */
+.stock{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px;margin:8px 0 40px;
+}
+.stock h3{font-size:1.05rem;margin-bottom:6px}
+.stock p{color:var(--muted);font-size:.88rem;margin-bottom:16px}
+.stock-dots{display:flex;gap:8px;flex-wrap:wrap}
+.gummy{
+  width:26px;height:26px;border-radius:9px;
+  background:var(--grad-cta);
+  box-shadow:inset 0 -3px 6px rgba(0,0,0,.25);
+}
+.gummy.sold{background:#22322a;box-shadow:none;opacity:.5}
+.stock-label{font-size:.82rem;color:var(--accent);font-weight:600;margin-top:14px}
+
+/* ---------- Seções ---------- */
+section{padding:36px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.45rem,5.5vw,1.8rem);margin-bottom:8px}
+.lead{color:var(--muted);margin-bottom:24px}
+
+.pain-list{list-style:none}
+.pain-list li{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:15px 16px;margin-bottom:10px;
+  font-size:.95rem;display:flex;gap:12px;
+}
+.pain-list .arrow{color:var(--accent);flex-shrink:0;font-weight:700}
+
+.why-grid{display:grid;gap:12px}
+.why-card{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:18px;
+}
+.why-card h3{font-size:1rem;margin-bottom:6px;color:var(--green)}
+.why-card p{font-size:.9rem;color:var(--muted)}
+
+.specs{width:100%;border-collapse:collapse;font-size:.92rem}
+.specs td{padding:12px 4px;border-bottom:1px solid var(--line)}
+.specs td:first-child{color:var(--muted)}
+.specs td:last-child{text-align:right;font-weight:600}
+
+.steps{list-style:none;counter-reset:step}
+.steps li{
+  counter-increment:step;position:relative;
+  padding:0 0 22px 44px;font-size:.95rem;
+}
+.steps li::before{
+  content:counter(step);position:absolute;left:0;top:0;
+  width:30px;height:30px;border-radius:50%;
+  background:var(--green-deep);color:#fff;font-weight:700;font-size:.85rem;
+  display:flex;align-items:center;justify-content:center;
+}
+.steps li strong{display:block;margin-bottom:2px}
+.steps li span{color:var(--muted);font-size:.88rem}
+
+/* ---------- Oferta ---------- */
+.anchor-note{
+  background:var(--surface-2);border:1px dashed var(--line);
+  border-radius:12px;padding:16px;font-size:.88rem;color:var(--muted);
+  margin-bottom:20px;
+}
+.anchor-note strong{color:var(--text)}
+.offer{
+  background:var(--surface);border:1px solid var(--green-deep);
+  border-radius:var(--radius);padding:22px;margin-bottom:14px;position:relative;
+}
+.offer.best{border-color:var(--accent)}
+.offer .tag{
+  position:absolute;top:-11px;left:20px;
+  background:var(--grad-cta);color:#fff;font-size:.68rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  padding:4px 12px;border-radius:100px;
+}
+.offer h3{font-size:1.1rem;margin-bottom:4px}
+.offer .desc{color:var(--muted);font-size:.85rem;margin-bottom:12px}
+.offer .val{font-family:'Fraunces',serif;font-size:1.8rem}
+.offer .val small{font-size:.85rem;color:var(--muted);font-family:'Inter',sans-serif;font-weight:400}
+.includes{list-style:none;margin:16px 0 4px}
+.includes li{font-size:.88rem;padding:4px 0;color:var(--muted)}
+.includes li::before{content:"+ ";color:var(--green);font-weight:700}
+
+/* ---------- Prova social ----------
+   TROCAR: cole aqui prints reais de WhatsApp / depoimentos.
+   NÃO invente depoimentos — use só prova real.
+--------------------------------------- */
+.proof-placeholder{
+  border:1px dashed var(--line);border-radius:var(--radius);
+  padding:28px 20px;text-align:center;color:var(--muted);font-size:.85rem;
+}
+
+/* ---------- Sobre ---------- */
+.about{display:flex;gap:16px;align-items:flex-start}
+.about .badge{
+  flex-shrink:0;width:52px;height:52px;border-radius:14px;
+  background:var(--green-deep);display:flex;align-items:center;justify-content:center;
+  font-family:'Fraunces',serif;font-size:1.3rem;color:#fff;
+}
+
+/* ---------- FAQ ---------- */
+details{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;margin-bottom:10px;overflow:hidden;
+}
+summary{
+  padding:16px;font-weight:600;font-size:.95rem;cursor:pointer;
+  list-style:none;display:flex;justify-content:space-between;gap:12px;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--green);font-size:1.2rem;flex-shrink:0}
+details[open] summary::after{content:"–"}
+details .a{padding:0 16px 16px;color:var(--muted);font-size:.9rem}
+
+/* ---------- CTA final ---------- */
+.final{padding:44px 0 24px;text-align:left}
+.final h2{margin-bottom:14px}
+.final ul{list-style:none;margin-bottom:24px}
+.final li{padding:5px 0;font-size:.95rem;display:flex;gap:10px}
+.final .check{color:var(--green);font-weight:700}
+
+footer{
+  border-top:1px solid var(--line);padding:28px 0 40px;
+  color:var(--muted);font-size:.75rem;line-height:1.7;
+}
+footer .brand{font-family:'Fraunces',serif;font-size:1rem;color:var(--text);margin-bottom:10px}
+footer .brand em{color:var(--green);font-style:normal}
+
+/* ---------- CTA fixo mobile ---------- */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:rgba(13,20,16,.92);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+  padding:12px 20px calc(12px + env(safe-area-inset-bottom));
+}
+.sticky-cta .inner{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:14px}
+.sticky-cta .info{flex:1;min-width:0}
+.sticky-cta .info .p{font-family:'Fraunces',serif;font-size:1.15rem;line-height:1.1}
+.sticky-cta .info .s{font-size:.72rem;color:var(--accent);font-weight:600}
+.sticky-cta a{
+  flex-shrink:0;display:flex;align-items:center;justify-content:center;
+  padding:13px 22px;border-radius:100px;background:var(--grad-cta);
+  color:#fff;text-decoration:none;font-weight:700;font-size:.92rem;
+  box-shadow:0 6px 18px rgba(224,82,63,.3);
+}
+
+@media(min-width:560px){
+  .why-grid{grid-template-columns:1fr 1fr}
+  .trust{grid-template-columns:repeat(4,1fr)}
+}
+@media(prefers-reduced-motion:reduce){
+  .eyebrow .dot{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="https://alphahempbrasil.com">Alpha <em>Hemp</em> Brasil</a>
+  <a class="back" href="https://alphahempbrasil.com">Voltar ao site</a>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ 1. HERO ============ -->
+  <div class="hero">
+    <span class="eyebrow"><span class="dot"></span>Lote importado · Pronta entrega Alphaville</span>
+    <h1>O Brasil é o país mais ansioso do mundo. E descobriu o <em>CBD.</em></h1>
+    <p class="sub">São 18,6 milhões de brasileiros com a mente a mil e o sono picotado. A procura por canabidiol explodiu — e a goma é o jeito mais simples de começar: 40 unidades de 5mg, dose exata, direto do Reino Unido.</p>
+
+    <ul class="hero-benefits">
+      <li><span class="check">✓</span>Dose precisa de 5mg por goma — você controla exatamente quanto usa</li>
+      <li><span class="check">✓</span>Não altera a consciência: CBD não causa efeito psicoativo</li>
+      <li><span class="check">✓</span>Marca Vitality CBD, referência no Reino Unido, com laudo COA</li>
+      <li><span class="check">✓</span>Entrega rápida em Alphaville e região de São Paulo</li>
+    </ul>
+
+    <img src="https://images.tcdn.com.br/img/img_prod/1211384/gummy_bears_729_1_a96be3fd45332539150c12ca260cc156.png" alt="Vitality CBD Gummy Bears — pote com 40 gomas de 5mg, sabor Raspberry &amp; Orange" class="product-img">
+
+    <div class="price-block">
+      <div class="from">Sites importados entregam em até 20 dias úteis</div>
+      <div class="price">R$ 400 <span class="per">· em até 12x no cartão</span></div>
+      <div class="pix">ou <strong>R$ 370</strong> à vista no Pix · pote com 40 gomas</div>
+    </div>
+
+    <a class="btn" data-evt="hero" href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Quero%20garantir%201%20pote%20do%20Vitality%20CBD%20Gummy%20Bears%20(40%20gomas%20%C2%B7%205mg).%20Ainda%20tem%20dispon%C3%ADvel%3F">Garantir meu pote no WhatsApp</a>
+    <p class="micro">Atendimento humano · resposta em minutos no horário comercial</p>
+  </div>
+
+  <!-- ============ 2. BARRA DE CONFIANÇA ============ -->
+  <div class="trust">
+    <div><div class="k">Origem</div><div class="v">Reino Unido</div></div>
+    <div><div class="k">Qualidade</div><div class="v">Laudo COA</div></div>
+    <div><div class="k">Enquadramento</div><div class="v">RDC 660/22</div></div>
+    <div><div class="k">Entrega</div><div class="v">Pronta · SP</div></div>
+  </div>
+
+  <!-- ============ 3. DISPONIBILIDADE ============ -->
+  <div class="stock">
+    <h3>Em estoque no Brasil · Pronta entrega</h3>
+    <p>Comprando de site importado, você espera até 20 dias úteis. Aqui o produto já passou pela importação: fecha hoje, recebe em dias — ou retira no showroom em Alphaville.</p>
+    <div class="stock-label">Lote importado do Reino Unido · disponibilidade imediata</div>
+  </div>
+
+  <!-- ============ 4. IDENTIFICAÇÃO / DOR ============ -->
+  <section>
+    <h2>Isso é pra você se…</h2>
+    <p class="lead">Se você se reconhece em alguma dessas cenas, é exatamente por isso que a procura pelo CBD explodiu no Brasil.</p>
+    <ul class="pain-list">
+      <li><span class="arrow">→</span>A mente acelera na hora de deitar: o sono não vem, ou vem picado — e você acorda mais cansado do que deitou</li>
+      <li><span class="arrow">→</span>Aperto no peito antes de reunião, preocupação que não desliga nem no fim de semana</li>
+      <li><span class="arrow">→</span>Foco que escapa: você abre dez coisas ao mesmo tempo e não termina nenhuma</li>
+      <li><span class="arrow">→</span>Já tentou chá, melatonina, respiração, meditação… e nada segura por muito tempo</li>
+      <li><span class="arrow">→</span>Quer testar o CBD, mas o óleo com conta-gotas parece complicado — você prefere começar com dose baixa e exata</li>
+    </ul>
+  </section>
+
+  <!-- ============ 5. POR QUE GOMA ============ -->
+  <section>
+    <h2>Por que a goma é a porta de entrada ideal</h2>
+    <p class="lead">Não é moda à toa: a goma virou o formato que mais cresce no mundo dos suplementos.</p>
+    <div class="why-grid">
+      <div class="why-card"><h3>Dose exata</h3><p>Cada goma tem exatos 5mg de CBD. Zero conta de gotas, zero dúvida sobre quanto você tomou.</p></div>
+      <div class="why-card"><h3>Discreta</h3><p>Parece uma vitamina em goma. Ninguém precisa saber, e você usa em qualquer lugar.</p></div>
+      <div class="why-card"><h3>Efeito gradual</h3><p>Absorção pela digestão: efeito começa entre 30min e 2h e dura mais tempo que formatos inalados.</p></div>
+      <div class="why-card"><h3>Sabor bom</h3><p>Raspberry &amp; Orange. Fácil de manter a constância — o que faz toda a diferença no resultado.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 6. ESPECIFICAÇÕES ============ -->
+  <section>
+    <h2>O que você recebe</h2>
+    <table class="specs">
+      <tr><td>Produto</td><td>Vitality CBD Gummy Bears</td></tr>
+      <tr><td>Quantidade</td><td>40 gomas por pote</td></tr>
+      <tr><td>CBD por goma</td><td>5mg (200mg por pote)</td></tr>
+      <tr><td>Sabor</td><td>Raspberry &amp; Orange</td></tr>
+      <tr><td>Origem</td><td>Reino Unido · Vitality CBD</td></tr>
+      <tr><td>Laudo</td><td>COA disponível no WhatsApp</td></tr>
+    </table>
+  </section>
+
+  <!-- ============ 7. COMO USAR ============ -->
+  <section>
+    <h2>Como começar do jeito certo</h2>
+    <ol class="steps">
+      <li><strong>Comece com 1 goma</strong><span>De preferência no fim do dia. Observe como se sente nas próximas horas.</span></li>
+      <li><strong>Mantenha por 3 a 5 dias</strong><span>Constância importa mais que dose alta. O corpo responde com o uso regular.</span></li>
+      <li><strong>Ajuste com orientação</strong><span>Nossa equipe acompanha você no WhatsApp e indica o próximo passo, se fizer sentido.</span></li>
+    </ol>
+  </section>
+
+  <!-- ============ 8. OFERTA ============ -->
+  <section>
+    <h2>Escolha seu formato</h2>
+    <div class="anchor-note">Gomas de CBD no Brasil vão de <strong>R$ 171 a quase R$ 600</strong> — e os sites importados entregam em até <strong>20 dias úteis</strong>. Aqui o produto já está no país: parcelamento em até 12x, orientação incluída e entrega em dias.</div>
+
+    <div class="offer">
+      <h3>1 pote · 40 gomas</h3>
+      <p class="desc">Pra testar e sentir a diferença no primeiro mês.</p>
+      <div class="val">R$ 400 <small>em até 12x · ou R$ 370 no Pix</small></div>
+      <ul class="includes">
+        <li>Laudo COA do lote</li>
+        <li>Guia rápido de introdução ao CBD</li>
+        <li>Orientação da equipe no WhatsApp</li>
+      </ul>
+    </div>
+
+    <div class="offer best">
+      <span class="tag">Melhor custo por goma</span>
+      <h3>Kit 2 potes · 80 gomas</h3>
+      <p class="desc">Dois meses de uso contínuo — ou um pote pra dividir com quem você confia.</p>
+      <div class="val">R$ 740 <small>em até 12x (R$ 370 cada) · ou R$ 700 no Pix</small></div>
+      <ul class="includes">
+        <li>Tudo do formato individual</li>
+        <li>Prioridade na reserva do próximo lote</li>
+      </ul>
+    </div>
+
+    <a class="btn" data-evt="oferta" href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Quero%20fechar%20o%20Vitality%20CBD%20Gummy%20Bears.%20Pode%20me%20passar%20as%20formas%20de%20pagamento%3F%20(1%20pote%20ou%20kit%202%20potes)">Quero fechar pelo WhatsApp</a>
+    <p class="micro">Pix, cartão e retirada no showroom em Alphaville</p>
+  </section>
+
+  <!-- ============ 9. A PROCURA NO BRASIL (prova por números) ============ -->
+  <section>
+    <h2>A procura explodiu no Brasil</h2>
+    <p class="lead">Não é tendência passageira — é um movimento nacional.</p>
+    <div class="why-grid">
+      <div class="why-card"><h3>Nº 1 do mundo</h3><p>Segundo a OMS, o Brasil é o país com os maiores índices de ansiedade do planeta.</p></div>
+      <div class="why-card"><h3>18,6 milhões</h3><p>É o número de brasileiros que convivem com ansiedade no dia a dia.</p></div>
+      <div class="why-card"><h3>+201% em vendas</h3><p>Foi o salto dos produtos de cannabis medicinal nas farmácias brasileiras em um único semestre.</p></div>
+      <div class="why-card"><h3>100 mil+ pacientes</h3><p>Já tratam com canabidiol no Brasil com registro na Anvisa — e o número só cresce.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ 10. QUEM ENTREGA ============ -->
+  <section>
+    <div class="about">
+      <div class="badge">A</div>
+      <div>
+        <h2>Alpha Hemp Brasil</h2>
+        <p class="lead" style="margin-bottom:10px">Representante da Vitality CBD no Brasil, com showroom físico em Alphaville desde a origem do ecossistema Alpha (2014).</p>
+        <p style="color:var(--muted);font-size:.92rem">Você não compra de um perfil anônimo: compra de uma operação local, com endereço, equipe de orientação e médico parceiro pra quem quer ir além no acompanhamento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 11. FAQ (quebra de objeções) ============ -->
+  <section>
+    <h2>Perguntas diretas, respostas diretas</h2>
+    <details>
+      <summary>Pra que serve o CBD?</summary>
+      <div class="a">É o composto não psicoativo da cannabis. No Brasil, quem procura geralmente busca apoio para ansiedade, qualidade do sono e estresse do dia a dia — pesquisadores brasileiros da USP estão entre os pioneiros do mundo estudando seus efeitos calmantes. Cada caso é único: nossa equipe e nosso médico parceiro orientam o uso certo pra você.</div>
+    </details>
+    <details>
+      <summary>CBD é legal no Brasil?</summary>
+      <div class="a">Sim. O uso de produtos à base de canabidiol é regulamentado pela Anvisa (RDC 660/2022). O CBD não é substância proibida — e a nossa equipe orienta você sobre o enquadramento correto do seu caso.</div>
+    </details>
+    <details>
+      <summary>Preciso de receita?</summary>
+      <div class="a">Produtos de CBD no Brasil seguem um fluxo com prescrição. Se você ainda não tem a sua, a gente resolve: temos médico parceiro e cuidamos do processo com você. É mais simples e rápido do que parece — chama no WhatsApp que explicamos o passo a passo.</div>
+    </details>
+    <details>
+      <summary>Vou ficar "chapado"?</summary>
+      <div class="a">Não. CBD não é psicoativo — não altera a consciência, não dá "barato" e não compromete seu dia. É exatamente por isso que profissionais em rotina intensa usam.</div>
+    </details>
+    <details>
+      <summary>Em quanto tempo sinto o efeito?</summary>
+      <div class="a">Por ser ingerida, a goma tem absorção gradual: o efeito costuma aparecer entre 30 minutos e 2 horas, e dura mais que outros formatos. O resultado consistente vem com o uso regular ao longo dos dias.</div>
+    </details>
+    <details>
+      <summary>Como recebo o produto?</summary>
+      <div class="a">Pronta entrega: retirada no showroom em Alphaville ou envio discreto para São Paulo e região. Combinamos tudo pelo WhatsApp na hora do fechamento.</div>
+    </details>
+    <details>
+      <summary>E se 5mg for pouco pra mim?</summary>
+      <div class="a">A goma é a porta de entrada — dose introdutória de propósito. Se você já usa CBD ou precisa de concentração maior, nossa equipe indica o produto certo (temos óleos de alta concentração) e o acompanhamento com nosso médico parceiro.</div>
+    </details>
+  </section>
+
+  <!-- ============ 12. CTA FINAL ============ -->
+  <section class="final">
+    <h2>Já está no Brasil. Decisão simples.</h2>
+    <ul>
+      <li><span class="check">✓</span>40 gomas · 5mg cada · Raspberry &amp; Orange</li>
+      <li><span class="check">✓</span>Importado do Reino Unido com laudo COA</li>
+      <li><span class="check">✓</span>Orientação incluída no WhatsApp</li>
+      <li><span class="check">✓</span>Pronta entrega em Alphaville e SP</li>
+    </ul>
+    <a class="btn" data-evt="final" href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Quero%20fechar%20o%20Vitality%20CBD%20Gummy%20Bears%20com%20pronta%20entrega.%20Como%20fa%C3%A7o%3F">Quero o meu com pronta entrega</a>
+    <a class="btn-ghost" data-evt="duvida" href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Estou%20na%20p%C3%A1gina%20das%20gummies%20e%20tenho%20uma%20d%C3%BAvida%20antes%20de%20fechar.">Ainda tenho uma dúvida</a>
+  </section>
+
+  <footer>
+    <div class="brand">Alpha <em>Hemp</em> Brasil</div>
+    Produto destinado a maiores de 18 anos. Este produto não é um medicamento e não substitui acompanhamento profissional. Comercialização e uso conforme legislação vigente (RDC 660/2022). Em caso de dúvidas sobre o seu caso, consulte um profissional de saúde — podemos indicar nosso médico parceiro.
+  </footer>
+
+</div>
+
+<!-- ============ CTA FIXO MOBILE ============ -->
+<div class="sticky-cta">
+  <div class="inner">
+    <div class="info">
+      <div class="p">R$ 400</div>
+      <div class="s">ou R$ 370 no Pix · pronta entrega</div>
+    </div>
+    <a data-evt="sticky" href="https://wa.me/5511924754748?text=Ol%C3%A1!%20Quero%20garantir%20o%20Vitality%20CBD%20Gummy%20Bears%20(40%20gomas%20%C2%B7%205mg).">Garantir no WhatsApp</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  // GA4: dispara evento em todo clique de WhatsApp
+  var links = document.querySelectorAll('a[data-evt]');
+  var j;
+  for (j = 0; j < links.length; j++) {
+    links[j].addEventListener('click', function(){
+      if (typeof gtag === 'function') {
+        gtag('event', 'whatsapp_click', { origem: this.getAttribute('data-evt'), produto: 'gummies_vitality' });
+      }
+    });
+  }
+
+  // Fallback da foto: se a imagem externa nao carregar, troca por card escuro elegante
+  var pimg = document.querySelector('.product-img');
+  if (pimg) {
+    var swapPhoto = function(){
+      var ph = document.createElement('div');
+      ph.className = 'product-photo';
+      ph.textContent = 'Vitality CBD Gummy Bears · 40 gomas · 5mg · Raspberry & Orange';
+      if (pimg.parentNode) { pimg.parentNode.replaceChild(ph, pimg); }
+    };
+    if (pimg.complete && pimg.naturalWidth === 0) {
+      swapPhoto();
+    } else {
+      pimg.addEventListener('error', swapPhoto);
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
